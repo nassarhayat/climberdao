@@ -88,11 +88,12 @@ button:focus {
 .events {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px;
 }
 
 .event {
   background-color: black;
-  margin: 20px;
   padding: 20px;
   color: white;
   border-radius: 10px;
@@ -114,8 +115,12 @@ p {
 
 @media only screen and (max-width: 600px) {
 	h1 {
-		font-size: 5rem;
+		font-size: 3rem;
 	}
+    .events {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 	.cta {
 		/* max-width: inherit; */
 		margin: 0;
